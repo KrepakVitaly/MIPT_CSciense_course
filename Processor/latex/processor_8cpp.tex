@@ -1,0 +1,154 @@
+\hypertarget{processor_8cpp}{
+\section{Файл processor.cpp}
+\label{processor_8cpp}\index{processor.cpp@{processor.cpp}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$windows.h$>$}\par
+{\ttfamily \#include \char`\"{}stack\_\-functions.cpp\char`\"{}}\par
+{\ttfamily \#include \char`\"{}CPU\_\-cmd.cpp\char`\"{}}\par
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{processor_8cpp_a6a3de2a9775af73cc411bbc42f0ec59a}{Greeting} ()
+\item 
+void \hyperlink{processor_8cpp_ae05620d5916d344b9a1541603d4951b8}{Simulate\_\-of\_\-Working} ()
+\item 
+void \hyperlink{processor_8cpp_a0cce6049fcb61a7f8df3a4c376b62de1}{Progress\_\-Bar} (char $\ast$message)
+\item 
+int \hyperlink{processor_8cpp_aa33123e3681d608f2f2883af84286af1}{Run\_\-Processor} (int Prog\_\-Memory\_\-Size, int Addrs\_\-Stack\_\-Size, int Calc\_\-Stack\_\-Size, FILE $\ast$Machine\_\-Code)
+\item 
+int \hyperlink{processor_8cpp_a8945be6084034095fa4570cec7cd4218}{Load\_\-Program} (FILE $\ast$Machine\_\-Code, double Prog\_\-Memory\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{processor_8cpp_a92f11020befc30f985f6064c320e5f38}{Execute\_\-Program} (double Prog\_\-Memory\mbox{[}$\,$\mbox{]}, \hyperlink{struct_stack__t}{Stack\_\-t} $\ast$CPU\_\-Calc\_\-Stack, \hyperlink{struct_stack__t}{Stack\_\-t} $\ast$CPU\_\-Addrs\_\-Stack)
+\item 
+void \hyperlink{processor_8cpp_a93babdb887c5f74af5efa9039f5dc40e}{Init\_\-Prog\_\-Memory} (double Prog\_\-Memory\mbox{[}$\,$\mbox{]}, int Prog\_\-Memory\_\-Size)
+\item 
+int \hyperlink{processor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+int const \hyperlink{processor_8cpp_af50a7cbcb2b2534feec950c3618e3807}{CALC\_\-STACK\_\-SIZE} = 300
+\begin{DoxyCompactList}\small\item\em Virtual\_\-Preprocessor v0.1. \item\end{DoxyCompactList}\item 
+int const \hyperlink{processor_8cpp_a1dcbbf425c1bc14e7aa7bf7227834a8f}{ADDRS\_\-STACK\_\-SIZE} = 500
+\item 
+int const \hyperlink{processor_8cpp_a126e81e222cb464a0525d96fc78d9cdb}{PROG\_\-MEMORY\_\-SIZE} = 10000
+\item 
+int const \hyperlink{processor_8cpp_ae4e915c73fa04ea0203f3a07516c7e88}{SIZE\_\-OF\_\-CMD} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{processor_8cpp_a92f11020befc30f985f6064c320e5f38}{
+\index{processor.cpp@{processor.cpp}!Execute\_\-Program@{Execute\_\-Program}}
+\index{Execute\_\-Program@{Execute\_\-Program}!processor.cpp@{processor.cpp}}
+\subsubsection[{Execute\_\-Program}]{\setlength{\rightskip}{0pt plus 5cm}int Execute\_\-Program (
+\begin{DoxyParamCaption}
+\item[{double}]{ Prog\_\-Memory\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf Stack\_\-t} $\ast$}]{ CPU\_\-Calc\_\-Stack, }
+\item[{{\bf Stack\_\-t} $\ast$}]{ CPU\_\-Addrs\_\-Stack}
+\end{DoxyParamCaption}
+)}}
+\label{processor_8cpp_a92f11020befc30f985f6064c320e5f38}
+\hypertarget{processor_8cpp_a6a3de2a9775af73cc411bbc42f0ec59a}{
+\index{processor.cpp@{processor.cpp}!Greeting@{Greeting}}
+\index{Greeting@{Greeting}!processor.cpp@{processor.cpp}}
+\subsubsection[{Greeting}]{\setlength{\rightskip}{0pt plus 5cm}void Greeting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{processor_8cpp_a6a3de2a9775af73cc411bbc42f0ec59a}
+\hypertarget{processor_8cpp_a93babdb887c5f74af5efa9039f5dc40e}{
+\index{processor.cpp@{processor.cpp}!Init\_\-Prog\_\-Memory@{Init\_\-Prog\_\-Memory}}
+\index{Init\_\-Prog\_\-Memory@{Init\_\-Prog\_\-Memory}!processor.cpp@{processor.cpp}}
+\subsubsection[{Init\_\-Prog\_\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}void Init\_\-Prog\_\-Memory (
+\begin{DoxyParamCaption}
+\item[{double}]{ Prog\_\-Memory\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{ Prog\_\-Memory\_\-Size}
+\end{DoxyParamCaption}
+)}}
+\label{processor_8cpp_a93babdb887c5f74af5efa9039f5dc40e}
+\hypertarget{processor_8cpp_a8945be6084034095fa4570cec7cd4218}{
+\index{processor.cpp@{processor.cpp}!Load\_\-Program@{Load\_\-Program}}
+\index{Load\_\-Program@{Load\_\-Program}!processor.cpp@{processor.cpp}}
+\subsubsection[{Load\_\-Program}]{\setlength{\rightskip}{0pt plus 5cm}int Load\_\-Program (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{ Machine\_\-Code, }
+\item[{double}]{ Prog\_\-Memory\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{processor_8cpp_a8945be6084034095fa4570cec7cd4218}
+\hypertarget{processor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{
+\index{processor.cpp@{processor.cpp}!main@{main}}
+\index{main@{main}!processor.cpp@{processor.cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{processor_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\hypertarget{processor_8cpp_a0cce6049fcb61a7f8df3a4c376b62de1}{
+\index{processor.cpp@{processor.cpp}!Progress\_\-Bar@{Progress\_\-Bar}}
+\index{Progress\_\-Bar@{Progress\_\-Bar}!processor.cpp@{processor.cpp}}
+\subsubsection[{Progress\_\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void Progress\_\-Bar (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ message}
+\end{DoxyParamCaption}
+)}}
+\label{processor_8cpp_a0cce6049fcb61a7f8df3a4c376b62de1}
+\hypertarget{processor_8cpp_aa33123e3681d608f2f2883af84286af1}{
+\index{processor.cpp@{processor.cpp}!Run\_\-Processor@{Run\_\-Processor}}
+\index{Run\_\-Processor@{Run\_\-Processor}!processor.cpp@{processor.cpp}}
+\subsubsection[{Run\_\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}int Run\_\-Processor (
+\begin{DoxyParamCaption}
+\item[{int}]{ Prog\_\-Memory\_\-Size, }
+\item[{int}]{ Addrs\_\-Stack\_\-Size, }
+\item[{int}]{ Calc\_\-Stack\_\-Size, }
+\item[{FILE $\ast$}]{ Machine\_\-Code}
+\end{DoxyParamCaption}
+)}}
+\label{processor_8cpp_aa33123e3681d608f2f2883af84286af1}
+\hypertarget{processor_8cpp_ae05620d5916d344b9a1541603d4951b8}{
+\index{processor.cpp@{processor.cpp}!Simulate\_\-of\_\-Working@{Simulate\_\-of\_\-Working}}
+\index{Simulate\_\-of\_\-Working@{Simulate\_\-of\_\-Working}!processor.cpp@{processor.cpp}}
+\subsubsection[{Simulate\_\-of\_\-Working}]{\setlength{\rightskip}{0pt plus 5cm}void Simulate\_\-of\_\-Working (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{processor_8cpp_ae05620d5916d344b9a1541603d4951b8}
+
+
+\subsection{Переменные}
+\hypertarget{processor_8cpp_a1dcbbf425c1bc14e7aa7bf7227834a8f}{
+\index{processor.cpp@{processor.cpp}!ADDRS\_\-STACK\_\-SIZE@{ADDRS\_\-STACK\_\-SIZE}}
+\index{ADDRS\_\-STACK\_\-SIZE@{ADDRS\_\-STACK\_\-SIZE}!processor.cpp@{processor.cpp}}
+\subsubsection[{ADDRS\_\-STACK\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf ADDRS\_\-STACK\_\-SIZE} = 500}}
+\label{processor_8cpp_a1dcbbf425c1bc14e7aa7bf7227834a8f}
+\hypertarget{processor_8cpp_af50a7cbcb2b2534feec950c3618e3807}{
+\index{processor.cpp@{processor.cpp}!CALC\_\-STACK\_\-SIZE@{CALC\_\-STACK\_\-SIZE}}
+\index{CALC\_\-STACK\_\-SIZE@{CALC\_\-STACK\_\-SIZE}!processor.cpp@{processor.cpp}}
+\subsubsection[{CALC\_\-STACK\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf CALC\_\-STACK\_\-SIZE} = 300}}
+\label{processor_8cpp_af50a7cbcb2b2534feec950c3618e3807}
+
+
+Virtual\_\-Preprocessor v0.1. 
+
+This is program that simulate wokring of preprocessor
+
+\begin{DoxyAuthor}{Автор}
+������ zorroxied ������� 016 ���� 
+\end{DoxyAuthor}
+\hypertarget{processor_8cpp_a126e81e222cb464a0525d96fc78d9cdb}{
+\index{processor.cpp@{processor.cpp}!PROG\_\-MEMORY\_\-SIZE@{PROG\_\-MEMORY\_\-SIZE}}
+\index{PROG\_\-MEMORY\_\-SIZE@{PROG\_\-MEMORY\_\-SIZE}!processor.cpp@{processor.cpp}}
+\subsubsection[{PROG\_\-MEMORY\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf PROG\_\-MEMORY\_\-SIZE} = 10000}}
+\label{processor_8cpp_a126e81e222cb464a0525d96fc78d9cdb}
+\hypertarget{processor_8cpp_ae4e915c73fa04ea0203f3a07516c7e88}{
+\index{processor.cpp@{processor.cpp}!SIZE\_\-OF\_\-CMD@{SIZE\_\-OF\_\-CMD}}
+\index{SIZE\_\-OF\_\-CMD@{SIZE\_\-OF\_\-CMD}!processor.cpp@{processor.cpp}}
+\subsubsection[{SIZE\_\-OF\_\-CMD}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf SIZE\_\-OF\_\-CMD} = 1}}
+\label{processor_8cpp_ae4e915c73fa04ea0203f3a07516c7e88}

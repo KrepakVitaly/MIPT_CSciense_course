@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Файл main2.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<h1>Файл main2.cpp</h1>  </div>
+</div>
+<div class="contents">
+<code>#include &quot;<a class="el" href="cmd__list_8c.html">cmd_list.c</a>&quot;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cmd__t.html">Cmd_t</a></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main2_8cpp.html#ac72c7a31a60fb94c98bc420f8d00b873">DEFINE_CMD_</a>(<a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>, def)&#160;&#160;&#160;cmd_##<a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>,</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main2_8cpp.html#a118426bbeebe47daac236d479a4d3d09">DEFINE_CMD_</a>(<a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>)</td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main2_8cpp.html#a1062901a7428fdd9c7f180f5e01ea056">bool</a></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a> { <a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3af120c209a13b563eabc573bf1f7dd61b">cmd_MaxCmdError</a> =  -1, 
+<a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3a55f0c61c4aebb901f6f43c010f3ce66c">cmd_MaxCmdNum</a> = ( push, 1 )( pop , 2 )( clr , 3 )( ok , 4 )( dump, 5 )( dup , 6 )( swap, 7 )( add , 48 )( sub , 49 )( div , 50 )( pow , 51 )( sqrt, 52 )( sin , 53 )( cos , 54 )( call, 115 )( ret , 116 )( jmp , 117 )( ja , 118 )( jb , 119 )( je , 120 )( jne , 121 )( nop , 153 )( end , 255 )
+ }</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main2_8cpp.html#aca07fca5366565fb255c9b3e689609a5">InitCommandTable</a> (<a class="el" href="struct_cmd__t.html">Cmd_t</a> <a class="el" href="main2_8cpp.html#ac2a8c4973a3e3fed67a3de8bd3efeefb">commands</a>[])</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main2_8cpp.html#a55dabe285a3a58a01e566a5b61ad31a4">NMAX</a> = 1000</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main2_8cpp.html#af9a724fe57b45f7e44b22e13b350b825">CMD_MAX</a> = 17</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_cmd__t.html">Cmd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main2_8cpp.html#ac2a8c4973a3e3fed67a3de8bd3efeefb">commands</a> []</td></tr>
+</table>
+<hr/><h2>Макросы</h2>
+<a class="anchor" id="ac72c7a31a60fb94c98bc420f8d00b873"></a><!-- doxytag: member="main2.cpp::DEFINE_CMD_" ref="ac72c7a31a60fb94c98bc420f8d00b873" args="(cmd, def)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFINE_CMD_</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">def&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;cmd_##<a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>,</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a118426bbeebe47daac236d479a4d3d09"></a><!-- doxytag: member="main2.cpp::DEFINE_CMD_" ref="a118426bbeebe47daac236d479a4d3d09" args="(cmd)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFINE_CMD_</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><pre class="fragment">{                                       \
+    <a class="code" href="main2_8cpp.html#ac2a8c4973a3e3fed67a3de8bd3efeefb">commands</a>[cmd_##<a class="code" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>].<a class="code" href="struct_cmd__t.html#af317cedb3cf0242f7e0294506fe2786b">code</a> = cmd_##<a class="code" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>;   \
+    <a class="code" href="main2_8cpp.html#ac2a8c4973a3e3fed67a3de8bd3efeefb">commands</a>[cmd_##<a class="code" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>].<a class="code" href="struct_cmd__t.html#a8bd9fa2a318cd0f9aa1b5938b306e069">name</a> = #<a class="code" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a>;        \
+    }
+</pre></div>
+</div>
+</div>
+<hr/><h2>Типы</h2>
+<a class="anchor" id="a1062901a7428fdd9c7f180f5e01ea056"></a><!-- doxytag: member="main2.cpp::bool" ref="a1062901a7428fdd9c7f180f5e01ea056" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int <a class="el" href="main2_8cpp.html#a1062901a7428fdd9c7f180f5e01ea056">bool</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Перечисления</h2>
+<a class="anchor" id="adfc5ba7e22f5e4a6221c12a70503bef3"></a><!-- doxytag: member="main2.cpp::cmd" ref="adfc5ba7e22f5e4a6221c12a70503bef3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="main2_8cpp.html#adfc5ba7e22f5e4a6221c12a70503bef3">cmd</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Элементы перечислений: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="adfc5ba7e22f5e4a6221c12a70503bef3af120c209a13b563eabc573bf1f7dd61b"></a><!-- doxytag: member="cmd_MaxCmdError" ref="adfc5ba7e22f5e4a6221c12a70503bef3af120c209a13b563eabc573bf1f7dd61b" args="" -->cmd_MaxCmdError</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="adfc5ba7e22f5e4a6221c12a70503bef3a55f0c61c4aebb901f6f43c010f3ce66c"></a><!-- doxytag: member="cmd_MaxCmdNum" ref="adfc5ba7e22f5e4a6221c12a70503bef3a55f0c61c4aebb901f6f43c010f3ce66c" args="" -->cmd_MaxCmdNum</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Функции</h2>
+<a class="anchor" id="aca07fca5366565fb255c9b3e689609a5"></a><!-- doxytag: member="main2.cpp::InitCommandTable" ref="aca07fca5366565fb255c9b3e689609a5" args="(Cmd_t commands[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitCommandTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_cmd__t.html">Cmd_t</a>&#160;</td>
+          <td class="paramname"> <em>commands</em>[]&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Переменные</h2>
+<a class="anchor" id="af9a724fe57b45f7e44b22e13b350b825"></a><!-- doxytag: member="main2.cpp::CMD_MAX" ref="af9a724fe57b45f7e44b22e13b350b825" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="main2_8cpp.html#af9a724fe57b45f7e44b22e13b350b825">CMD_MAX</a> = 17</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac2a8c4973a3e3fed67a3de8bd3efeefb"></a><!-- doxytag: member="main2.cpp::commands" ref="ac2a8c4973a3e3fed67a3de8bd3efeefb" args="[]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_cmd__t.html">Cmd_t</a> <a class="el" href="main2_8cpp.html#ac2a8c4973a3e3fed67a3de8bd3efeefb">commands</a>[]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><pre class="fragment"> {
+    {cmd_nop,  <span class="stringliteral">&quot;nop&quot;</span> },
+    {cmd_push, <span class="stringliteral">&quot;push&quot;</span>},
+    {cmd_pop,  <span class="stringliteral">&quot;pop&quot;</span> }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a55dabe285a3a58a01e566a5b61ad31a4"></a><!-- doxytag: member="main2.cpp::NMAX" ref="a55dabe285a3a58a01e566a5b61ad31a4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="main2_8cpp.html#a55dabe285a3a58a01e566a5b61ad31a4">NMAX</a> = 1000</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация . Последние изменения: Fri Mar 18 2011 19:14:56. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

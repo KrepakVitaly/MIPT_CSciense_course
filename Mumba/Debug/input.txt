@@ -1,0 +1,3 @@
+bear:animal,brown,angry
+raven:bird,black,animal
+elephant:animal,big,kind 

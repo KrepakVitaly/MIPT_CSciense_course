@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Файл processor.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<h1>Файл processor.cpp</h1>  </div>
+</div>
+<div class="contents">
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;math.h&gt;</code><br/>
+<code>#include &lt;windows.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="stack__functions_8cpp.html">stack_functions.cpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="_c_p_u__cmd_8cpp.html">CPU_cmd.cpp</a>&quot;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#a6a3de2a9775af73cc411bbc42f0ec59a">Greeting</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#ae05620d5916d344b9a1541603d4951b8">Simulate_of_Working</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#a0cce6049fcb61a7f8df3a4c376b62de1">Progress_Bar</a> (char *message)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#aa33123e3681d608f2f2883af84286af1">Run_Processor</a> (int Prog_Memory_Size, int Addrs_Stack_Size, int Calc_Stack_Size, FILE *Machine_Code)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#a8945be6084034095fa4570cec7cd4218">Load_Program</a> (FILE *Machine_Code, double Prog_Memory[])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#a92f11020befc30f985f6064c320e5f38">Execute_Program</a> (double Prog_Memory[], <a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack, <a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Addrs_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#a93babdb887c5f74af5efa9039f5dc40e">Init_Prog_Memory</a> (double Prog_Memory[], int Prog_Memory_Size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#af50a7cbcb2b2534feec950c3618e3807">CALC_STACK_SIZE</a> = 300</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual_Preprocessor v0.1.  <a href="#af50a7cbcb2b2534feec950c3618e3807"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#a1dcbbf425c1bc14e7aa7bf7227834a8f">ADDRS_STACK_SIZE</a> = 500</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#a126e81e222cb464a0525d96fc78d9cdb">PROG_MEMORY_SIZE</a> = 10000</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="processor_8cpp.html#ae4e915c73fa04ea0203f3a07516c7e88">SIZE_OF_CMD</a> = 1</td></tr>
+</table>
+<hr/><h2>Функции</h2>
+<a class="anchor" id="a92f11020befc30f985f6064c320e5f38"></a><!-- doxytag: member="processor.cpp::Execute_Program" ref="a92f11020befc30f985f6064c320e5f38" args="(double Prog_Memory[], Stack_t *CPU_Calc_Stack, Stack_t *CPU_Addrs_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Execute_Program </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>Prog_Memory</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Addrs_Stack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a3de2a9775af73cc411bbc42f0ec59a"></a><!-- doxytag: member="processor.cpp::Greeting" ref="a6a3de2a9775af73cc411bbc42f0ec59a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Greeting </td>
+          <td>(</td>
+          <td class="paramname">&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a93babdb887c5f74af5efa9039f5dc40e"></a><!-- doxytag: member="processor.cpp::Init_Prog_Memory" ref="a93babdb887c5f74af5efa9039f5dc40e" args="(double Prog_Memory[], int Prog_Memory_Size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Init_Prog_Memory </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>Prog_Memory</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>Prog_Memory_Size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8945be6084034095fa4570cec7cd4218"></a><!-- doxytag: member="processor.cpp::Load_Program" ref="a8945be6084034095fa4570cec7cd4218" args="(FILE *Machine_Code, double Prog_Memory[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Load_Program </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"> <em>Machine_Code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>Prog_Memory</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a><!-- doxytag: member="processor.cpp::main" ref="ae66f6b31b5ad750f1fe042a706a4e3d4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname">&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0cce6049fcb61a7f8df3a4c376b62de1"></a><!-- doxytag: member="processor.cpp::Progress_Bar" ref="a0cce6049fcb61a7f8df3a4c376b62de1" args="(char *message)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Progress_Bar </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"> <em>message</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa33123e3681d608f2f2883af84286af1"></a><!-- doxytag: member="processor.cpp::Run_Processor" ref="aa33123e3681d608f2f2883af84286af1" args="(int Prog_Memory_Size, int Addrs_Stack_Size, int Calc_Stack_Size, FILE *Machine_Code)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Run_Processor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>Prog_Memory_Size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>Addrs_Stack_Size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>Calc_Stack_Size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"> <em>Machine_Code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae05620d5916d344b9a1541603d4951b8"></a><!-- doxytag: member="processor.cpp::Simulate_of_Working" ref="ae05620d5916d344b9a1541603d4951b8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Simulate_of_Working </td>
+          <td>(</td>
+          <td class="paramname">&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Переменные</h2>
+<a class="anchor" id="a1dcbbf425c1bc14e7aa7bf7227834a8f"></a><!-- doxytag: member="processor.cpp::ADDRS_STACK_SIZE" ref="a1dcbbf425c1bc14e7aa7bf7227834a8f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="processor_8cpp.html#a1dcbbf425c1bc14e7aa7bf7227834a8f">ADDRS_STACK_SIZE</a> = 500</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af50a7cbcb2b2534feec950c3618e3807"></a><!-- doxytag: member="processor.cpp::CALC_STACK_SIZE" ref="af50a7cbcb2b2534feec950c3618e3807" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="processor_8cpp.html#af50a7cbcb2b2534feec950c3618e3807">CALC_STACK_SIZE</a> = 300</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Virtual_Preprocessor v0.1. </p>
+<p>This is program that simulate wokring of preprocessor</p>
+<dl class="author"><dt><b>Автор:</b></dt><dd>������ zorroxied ������� 016 ���� </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a126e81e222cb464a0525d96fc78d9cdb"></a><!-- doxytag: member="processor.cpp::PROG_MEMORY_SIZE" ref="a126e81e222cb464a0525d96fc78d9cdb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="processor_8cpp.html#a126e81e222cb464a0525d96fc78d9cdb">PROG_MEMORY_SIZE</a> = 10000</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4e915c73fa04ea0203f3a07516c7e88"></a><!-- doxytag: member="processor.cpp::SIZE_OF_CMD" ref="ae4e915c73fa04ea0203f3a07516c7e88" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="processor_8cpp.html#ae4e915c73fa04ea0203f3a07516c7e88">SIZE_OF_CMD</a> = 1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация . Последние изменения: Fri Mar 18 2011 19:14:56. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

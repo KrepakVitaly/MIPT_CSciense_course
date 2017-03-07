@@ -1,0 +1,77 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large Оглавление}\\
+\vspace*{1cm}
+{\large Создано системой Doxygen 1.7.2}\\
+\vspace*{0.5cm}
+{\small Fri Mar 18 2011 19:14:56}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+\chapter{Алфавитный указатель классов}
+\input{annotated}
+\chapter{Список файлов}
+\input{files}
+\chapter{Классы}
+\input{struct_cmd__t}
+\input{classfn}
+\input{struct_stack__t}
+\chapter{Файлы}
+\input{assembler_8cpp}
+\input{cmd__list_8c}
+\input{_c_p_u__cmd_8cpp}
+\input{disasm_8cpp}
+\input{instr__set_8cpp}
+\input{main2_8cpp}
+\input{processor_8cpp}
+\input{stack__functions_8cpp}
+\printindex
+\end{document}

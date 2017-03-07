@@ -1,0 +1,59 @@
+00:  call 78.000000
+02:  push 2.000000
+04:  pow
+05:  dump
+06:  push 4.000000
+08:  call 75.000000
+10:  call 81.000000
+12:  mul
+13:  mul
+14:  swap
+15:  sub
+16:  push 0.000000
+18:  swap
+19:  ja   25.000000
+21:  jb 57.000000
+23:  je 61.000000
+25:  dup
+26:  sqrt
+27:  call 78.000000
+29:  push -1.000000
+31:  mul
+32:  sub
+33:  call 75.000000
+35:  push 2.000000
+37:  mul
+38:  swap
+39:  div
+40:  pop
+41:  sqrt
+42:  call 78.000000
+44:  push -1.000000
+46:  mul
+47:  add
+48:  call 75.000000
+50:  push 2.000000
+52:  mul
+53:  swap
+54:  div
+55:  pop
+56:  end
+57:  push -666.000000
+59:  pop
+60:  end
+61:  call 78.000000
+63:  push -1.000000
+65:  mul
+66:  call 75.000000
+68:  push 2.000000
+70:  mul
+71:  swap
+72:  div
+73:  pop
+74:  end
+75:  push 1.000000
+77:  ret
+78:  push 2.000000
+80:  ret
+81:  push -3.000000
+83:  ret

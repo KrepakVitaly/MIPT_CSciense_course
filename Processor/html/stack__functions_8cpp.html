@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Файл stack_functions.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<h1>Файл stack_functions.cpp</h1>  </div>
+</div>
+<div class="contents">
+<code>#include &lt;assert.h&gt;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_stack__t.html">Stack_t</a></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#af81bfd1f3a3237cf6efd2713cf264b74">Stack_Construct</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *Ordering_Stack, int Stack_Size, int size_of_element)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#a736e98aa4afe89841f8ce347ad217b2a">Push</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *Stack, double input_value)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#a27d68e2f6120cf776a59c3ddc413610c">Pop</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#a576b250f70a75ac5ccaf95b3339de595">Stack_Clear</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#ae8f1906398e6f15c1ed4e751061b494b">Stack_Top</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#aae0730ddc8281dba01359cddce0f1019">Check_Damage</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#a486a21128dd4dfacedb7d7703291939c">Stack_Destruct</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#a9077b7e622f5ac7c65de184d4202d258">Stack_Dump</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *Stack, int With_List_of_Elements)</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#a186e65ce1f2d297849eaed5637a663fa">SIZE_OF_STACK</a> = 1000</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack_Functions.  <a href="#a186e65ce1f2d297849eaed5637a663fa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#a2ec38300b59a7d5ceae2f537a3c519b6">WRITE_LIST_YES</a> = 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#a0d72d818a08b708312e3c66988830715">WRITE_LIST_NO</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#aa7ed3c58bfa63800f1d20b0f8b6753c2">BEGIN_OF_STACK</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack__functions_8cpp.html#aba3a43219046089b957387fb8dbdea54">TERMINATE</a> = -666</td></tr>
+</table>
+<hr/><h2>Функции</h2>
+<a class="anchor" id="aae0730ddc8281dba01359cddce0f1019"></a><!-- doxytag: member="stack_functions.cpp::Check_Damage" ref="aae0730ddc8281dba01359cddce0f1019" args="(Stack_t *Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Check_Damage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27d68e2f6120cf776a59c3ddc413610c"></a><!-- doxytag: member="stack_functions.cpp::Pop" ref="a27d68e2f6120cf776a59c3ddc413610c" args="(Stack_t *Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a736e98aa4afe89841f8ce347ad217b2a"></a><!-- doxytag: member="stack_functions.cpp::Push" ref="a736e98aa4afe89841f8ce347ad217b2a" args="(Stack_t *Stack, double input_value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>input_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a576b250f70a75ac5ccaf95b3339de595"></a><!-- doxytag: member="stack_functions.cpp::Stack_Clear" ref="a576b250f70a75ac5ccaf95b3339de595" args="(Stack_t *Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stack_Clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af81bfd1f3a3237cf6efd2713cf264b74"></a><!-- doxytag: member="stack_functions.cpp::Stack_Construct" ref="af81bfd1f3a3237cf6efd2713cf264b74" args="(Stack_t *Ordering_Stack, int Stack_Size, int size_of_element)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stack_Construct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>Ordering_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>Stack_Size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>size_of_element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a486a21128dd4dfacedb7d7703291939c"></a><!-- doxytag: member="stack_functions.cpp::Stack_Destruct" ref="a486a21128dd4dfacedb7d7703291939c" args="(Stack_t *Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Stack_Destruct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9077b7e622f5ac7c65de184d4202d258"></a><!-- doxytag: member="stack_functions.cpp::Stack_Dump" ref="a9077b7e622f5ac7c65de184d4202d258" args="(Stack_t *Stack, int With_List_of_Elements)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Stack_Dump </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>With_List_of_Elements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8f1906398e6f15c1ed4e751061b494b"></a><!-- doxytag: member="stack_functions.cpp::Stack_Top" ref="ae8f1906398e6f15c1ed4e751061b494b" args="(Stack_t *Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Stack_Top </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Переменные</h2>
+<a class="anchor" id="aa7ed3c58bfa63800f1d20b0f8b6753c2"></a><!-- doxytag: member="stack_functions.cpp::BEGIN_OF_STACK" ref="aa7ed3c58bfa63800f1d20b0f8b6753c2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="stack__functions_8cpp.html#aa7ed3c58bfa63800f1d20b0f8b6753c2">BEGIN_OF_STACK</a> = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a186e65ce1f2d297849eaed5637a663fa"></a><!-- doxytag: member="stack_functions.cpp::SIZE_OF_STACK" ref="a186e65ce1f2d297849eaed5637a663fa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="stack__functions_8cpp.html#a186e65ce1f2d297849eaed5637a663fa">SIZE_OF_STACK</a> = 1000</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Stack_Functions. </p>
+<p>Release of Stack </p>
+<dl class="author"><dt><b>Автор:</b></dt><dd>������ zorroxied ������� 016 ���� </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aba3a43219046089b957387fb8dbdea54"></a><!-- doxytag: member="stack_functions.cpp::TERMINATE" ref="aba3a43219046089b957387fb8dbdea54" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="stack__functions_8cpp.html#aba3a43219046089b957387fb8dbdea54">TERMINATE</a> = -666</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d72d818a08b708312e3c66988830715"></a><!-- doxytag: member="stack_functions.cpp::WRITE_LIST_NO" ref="a0d72d818a08b708312e3c66988830715" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="stack__functions_8cpp.html#a0d72d818a08b708312e3c66988830715">WRITE_LIST_NO</a> = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ec38300b59a7d5ceae2f537a3c519b6"></a><!-- doxytag: member="stack_functions.cpp::WRITE_LIST_YES" ref="a2ec38300b59a7d5ceae2f537a3c519b6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="stack__functions_8cpp.html#a2ec38300b59a7d5ceae2f537a3c519b6">WRITE_LIST_YES</a> = 1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация . Последние изменения: Fri Mar 18 2011 19:14:56. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

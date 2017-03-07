@@ -1,0 +1,12 @@
+Hello! I'm dump of your stack.
+If you called me, then you in a trouble.
+I hope, I can help you, my master...
+
+Date of call me: Oct 31 2010  23:29:51
+
+Stack parameters:
+
+The number of elements     =  100;
+Pointer value in this time =  1;
+The last element           =  1.000000;
+The address of beginning   =  4016272;

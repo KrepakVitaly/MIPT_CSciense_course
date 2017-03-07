@@ -1,0 +1,165 @@
+\hypertarget{double__list_8cpp}{
+\section{Файл H:/CScience/Double-\/linked list/double\_\-list.cpp}
+\label{double__list_8cpp}\index{H:/CScience/Double-\/linked list/double\_\-list.cpp@{H:/CScience/Double-\/linked list/double\_\-list.cpp}}
+}
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$malloc.h$>$}\par
+{\ttfamily \#include $<$windows.h$>$}\par
+{\ttfamily \#include $<$assert.h$>$}\par
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlist__elem__t}{list\_\-elem\_\-t}
+\begin{DoxyCompactList}\small\item\em Элемент списка структура является элементом списка \item\end{DoxyCompactList}\item 
+struct \hyperlink{structlist__t}{list\_\-t}
+\begin{DoxyCompactList}\small\item\em Спискок. Содержит в себе указатели на начальный и конечный элементы. Внимание! После объявления необходимо инициализировать \item\end{DoxyCompactList}\item 
+struct \hyperlink{structiter__t}{iter\_\-t}
+\begin{DoxyCompactList}\small\item\em Итератор. Приспособление для ориентирования по списку. Содержит в себе указатель на список, по которому \char`\"{}ходит\char`\"{}; а также указатель на текущий просматриваемый элемент Внимание! После объявления необходимо инициализировать!!!! \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{double__list_8cpp_aa181ce6c9b73889989018c92304a8930}{Delete\_\-Element} (\hyperlink{structiter__t}{iter\_\-t} $\ast$Iterator)
+\begin{DoxyCompactList}\small\item\em Delete\_\-Element. \item\end{DoxyCompactList}\item 
+void \hyperlink{double__list_8cpp_ad025d6dc0f490cfecf5f4bfac3d53062}{Add\_\-Element} (\hyperlink{structiter__t}{iter\_\-t} $\ast$Iterator)
+\begin{DoxyCompactList}\small\item\em Add\_\-Element. \item\end{DoxyCompactList}\item 
+void \hyperlink{double__list_8cpp_a75448edf2720e9edab614ef77f6193ed}{Init\_\-Iterator} (\hyperlink{structiter__t}{iter\_\-t} $\ast$Iterator)
+\begin{DoxyCompactList}\small\item\em Init\_\-Iterator. \item\end{DoxyCompactList}\item 
+void \hyperlink{double__list_8cpp_a3a1eaa193133ddba7de417d9710c6559}{Init\_\-List} (\hyperlink{structlist__t}{list\_\-t} $\ast$List)
+\begin{DoxyCompactList}\small\item\em Init\_\-List. \item\end{DoxyCompactList}\item 
+void \hyperlink{double__list_8cpp_aab553d3812f0888dc3256d3ea72ff017}{Rewind\_\-to\_\-End\_\-List} (\hyperlink{structiter__t}{iter\_\-t} $\ast$Iterator)
+\item 
+void \hyperlink{double__list_8cpp_ad5945a41e34fbd9a4430cba0590086be}{Iter} (\hyperlink{structiter__t}{iter\_\-t} $\ast$Iterator)
+\item 
+void \hyperlink{double__list_8cpp_a229bdf98c52341ac4e43938a352c464c}{Rewind\_\-List} (\hyperlink{structiter__t}{iter\_\-t} $\ast$Iterator)
+\begin{DoxyCompactList}\small\item\em Rewind\_\-List. \item\end{DoxyCompactList}\item 
+int \hyperlink{double__list_8cpp_a49cb60e909cf9bb442005efe73bd494f}{Filling\_\-Test} (\hyperlink{structiter__t}{iter\_\-t} $\ast$Iterator)
+\item 
+int \hyperlink{double__list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+int const \hyperlink{double__list_8cpp_affb9f5c211a982124aff1235224d930a}{NONCONST} = 0
+\begin{DoxyCompactList}\small\item\em Двусвязный список \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{double__list_8cpp_ad025d6dc0f490cfecf5f4bfac3d53062}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!Add\_\-Element@{Add\_\-Element}}
+\index{Add\_\-Element@{Add\_\-Element}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{Add\_\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Add\_\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\_\-t} $\ast$}]{ Iterator}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_ad025d6dc0f490cfecf5f4bfac3d53062}
+
+
+Add\_\-Element. 
+
+Функция, добавляющая новый элемент в список.
+
+Внимание! Функция работает только с концом списка! \hypertarget{double__list_8cpp_aa181ce6c9b73889989018c92304a8930}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!Delete\_\-Element@{Delete\_\-Element}}
+\index{Delete\_\-Element@{Delete\_\-Element}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{Delete\_\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void Delete\_\-Element (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\_\-t} $\ast$}]{ Iterator}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_aa181ce6c9b73889989018c92304a8930}
+
+
+Delete\_\-Element. 
+
+Функция, удаляющая текущий элемент из списка. Внимание! Если осуществлена попытка удалить элемент из пустого списка (элемент, указатель на который NULL), то assert. \hypertarget{double__list_8cpp_a49cb60e909cf9bb442005efe73bd494f}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!Filling\_\-Test@{Filling\_\-Test}}
+\index{Filling\_\-Test@{Filling\_\-Test}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{Filling\_\-Test}]{\setlength{\rightskip}{0pt plus 5cm}int Filling\_\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\_\-t} $\ast$}]{ Iterator}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_a49cb60e909cf9bb442005efe73bd494f}
+\hypertarget{double__list_8cpp_a75448edf2720e9edab614ef77f6193ed}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!Init\_\-Iterator@{Init\_\-Iterator}}
+\index{Init\_\-Iterator@{Init\_\-Iterator}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{Init\_\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}void Init\_\-Iterator (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\_\-t} $\ast$}]{ Iterator}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_a75448edf2720e9edab614ef77f6193ed}
+
+
+Init\_\-Iterator. 
+
+Инициализация типа \hyperlink{structiter__t}{iter\_\-t} NULL'ами \hypertarget{double__list_8cpp_a3a1eaa193133ddba7de417d9710c6559}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!Init\_\-List@{Init\_\-List}}
+\index{Init\_\-List@{Init\_\-List}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{Init\_\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Init\_\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf list\_\-t} $\ast$}]{ List}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_a3a1eaa193133ddba7de417d9710c6559}
+
+
+Init\_\-List. 
+
+Инициализация типа \hyperlink{structlist__t}{list\_\-t} NULL'ами \hypertarget{double__list_8cpp_ad5945a41e34fbd9a4430cba0590086be}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!Iter@{Iter}}
+\index{Iter@{Iter}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{Iter}]{\setlength{\rightskip}{0pt plus 5cm}void Iter (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\_\-t} $\ast$}]{ Iterator}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_ad5945a41e34fbd9a4430cba0590086be}
+\hypertarget{double__list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!main@{main}}
+\index{main@{main}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+\hypertarget{double__list_8cpp_a229bdf98c52341ac4e43938a352c464c}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!Rewind\_\-List@{Rewind\_\-List}}
+\index{Rewind\_\-List@{Rewind\_\-List}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{Rewind\_\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Rewind\_\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\_\-t} $\ast$}]{ Iterator}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_a229bdf98c52341ac4e43938a352c464c}
+
+
+Rewind\_\-List. 
+
+Переход к началу списка \hypertarget{double__list_8cpp_aab553d3812f0888dc3256d3ea72ff017}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!Rewind\_\-to\_\-End\_\-List@{Rewind\_\-to\_\-End\_\-List}}
+\index{Rewind\_\-to\_\-End\_\-List@{Rewind\_\-to\_\-End\_\-List}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{Rewind\_\-to\_\-End\_\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Rewind\_\-to\_\-End\_\-List (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\_\-t} $\ast$}]{ Iterator}
+\end{DoxyParamCaption}
+)}}
+\label{double__list_8cpp_aab553d3812f0888dc3256d3ea72ff017}
+
+
+\subsection{Переменные}
+\hypertarget{double__list_8cpp_affb9f5c211a982124aff1235224d930a}{
+\index{double\_\-list.cpp@{double\_\-list.cpp}!NONCONST@{NONCONST}}
+\index{NONCONST@{NONCONST}!double_list.cpp@{double\_\-list.cpp}}
+\subsubsection[{NONCONST}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf NONCONST} = 0}}
+\label{double__list_8cpp_affb9f5c211a982124aff1235224d930a}
+
+
+Двусвязный список 
+
+doubly-\/linked list \begin{DoxyAuthor}{Автор}
+Крепак zorroxied Виталий 016 ФРТК 
+\end{DoxyAuthor}

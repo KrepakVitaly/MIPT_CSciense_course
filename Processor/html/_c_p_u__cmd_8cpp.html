@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Р¤Р°Р№Р» CPU_cmd.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'РџРѕРёСЃРє');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>РўРёС‚СѓР»СЊРЅР°СЏ&#160;СЃС‚СЂР°РЅРёС†Р°</span></a></li>
+      <li><a href="annotated.html"><span>РљР»Р°СЃСЃС‹</span></a></li>
+      <li class="current"><a href="files.html"><span>Р¤Р°Р№Р»С‹</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="РџРѕРёСЃРє" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Р¤Р°Р№Р»С‹</span></a></li>
+      <li><a href="globals.html"><span>РЎРїРёСЃРѕРє&#160;С‡Р»РµРЅРѕРІ&#160;РІСЃРµС…&#160;С„Р°Р№Р»РѕРІ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Р¤СѓРЅРєС†РёРё</a> &#124;
+<a href="#var-members">РџРµСЂРµРјРµРЅРЅС‹Рµ</a>  </div>
+  <div class="headertitle">
+<h1>Р¤Р°Р№Р» CPU_cmd.cpp</h1>  </div>
+</div>
+<div class="contents">
+<code>#include &quot;<a class="el" href="instr__set_8cpp.html">instr_set.cpp</a>&quot;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Р¤СѓРЅРєС†РёРё</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#ac971a9f5d2f450c69236df058fda947a">Nop_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, ни делающая ничего. Сделана на всякий случай. !  <a href="#ac971a9f5d2f450c69236df058fda947a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a17072fdc210423b28b99b2ff15ecee41">Pop_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack, int fun_code=<a class="el" href="_c_p_u__cmd_8cpp.html#a82abd6ee9eadb54dd25fc4cae1d17d6e">NO_CALLING_FUNC</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, вытаскивающая элемент из стека, и возвращающая его значение, если функция вызвана пользователем, то значение печатается на экран. В случае, если стек пуст, то в сообщении об ошибке печатается код вызвавшей функции (см. <a class="el" href="instr__set_8cpp.html">Instr_set.cpp</a>), если функция вызвана пользователем, то возвращается -1 (NO_CALLING_FUNC). !  <a href="#a17072fdc210423b28b99b2ff15ecee41"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a7e0a5c4dcc5938848b943c982b7fac9e">Push_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack, double input_value, int fun_code=<a class="el" href="_c_p_u__cmd_8cpp.html#a82abd6ee9eadb54dd25fc4cae1d17d6e">NO_CALLING_FUNC</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a2d7b3bafab9d8688d919f4b9bff4df15">Dup_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a25bfc48b4af9404c95b57e7f69e0fab7">Swap_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#ab70627f8071d5877a470837c6e4ecd40">Add_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a031ce7b5c5a3b8b0c088422a3f6bf758">Sub_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a1c1777bc8f206bcfbe594bf60ea29b07">Mul_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a947339e90f88751aa614586b0a8da68c">Div_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a6a736f2f5e2eda91b9c193d3a9e78474">Pow_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a64dd07cd3149e03c32b887c5696ec6f3">Sqrt_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#abf11cdc4701e7f753c5b337e76b83c54">Sin_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a01fae77201c9eccea038fe1a03c3b4e5">Cos_CPU</a> (<a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a7ecc2ee6accaaeed7b5cc1a6b1a6d1d0">Call_CPU</a> (int *cmd_counter, <a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Addrs_Stack, double addr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a0f2d15d862e43169b9233167a3e2bf19">Ret_CPU</a> (int *cmd_counter, <a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Addrs_Stack)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#af4e8621899ae5a00b46950e5573b6719">Jmp_CPU</a> (int *cmd_counter, double addr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#afb3a3b12a5b1333656bbe13707803071">Ja_CPU</a> (int *cmd_counter, <a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack, double addr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#aac1b66376824a67a45041f731cc20f17">Jb_CPU</a> (int *cmd_counter, <a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack, double addr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#aea5a56d9edc9e875f2ae30e161361fc0">Je_CPU</a> (int *cmd_counter, <a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack, double addr)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a6b8428618c52bab5d7cf762da2726c2c">Jne_CPU</a> (int *cmd_counter, <a class="el" href="struct_stack__t.html">Stack_t</a> *CPU_Calc_Stack, double addr)</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+РџРµСЂРµРјРµРЅРЅС‹Рµ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_p_u__cmd_8cpp.html#a82abd6ee9eadb54dd25fc4cae1d17d6e">NO_CALLING_FUNC</a> = -1</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Command for Virtual Preprocessor v0.1.  <a href="#a82abd6ee9eadb54dd25fc4cae1d17d6e"></a><br/></td></tr>
+</table>
+<hr/><h2>Р¤СѓРЅРєС†РёРё</h2>
+<a class="anchor" id="ab70627f8071d5877a470837c6e4ecd40"></a><!-- doxytag: member="CPU_cmd.cpp::Add_CPU" ref="ab70627f8071d5877a470837c6e4ecd40" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Add_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ecc2ee6accaaeed7b5cc1a6b1a6d1d0"></a><!-- doxytag: member="CPU_cmd.cpp::Call_CPU" ref="a7ecc2ee6accaaeed7b5cc1a6b1a6d1d0" args="(int *cmd_counter, Stack_t *CPU_Addrs_Stack, double addr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Call_CPU </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"> <em>cmd_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Addrs_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01fae77201c9eccea038fe1a03c3b4e5"></a><!-- doxytag: member="CPU_cmd.cpp::Cos_CPU" ref="a01fae77201c9eccea038fe1a03c3b4e5" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cos_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a947339e90f88751aa614586b0a8da68c"></a><!-- doxytag: member="CPU_cmd.cpp::Div_CPU" ref="a947339e90f88751aa614586b0a8da68c" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Div_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d7b3bafab9d8688d919f4b9bff4df15"></a><!-- doxytag: member="CPU_cmd.cpp::Dup_CPU" ref="a2d7b3bafab9d8688d919f4b9bff4df15" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dup_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb3a3b12a5b1333656bbe13707803071"></a><!-- doxytag: member="CPU_cmd.cpp::Ja_CPU" ref="afb3a3b12a5b1333656bbe13707803071" args="(int *cmd_counter, Stack_t *CPU_Calc_Stack, double addr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ja_CPU </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"> <em>cmd_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac1b66376824a67a45041f731cc20f17"></a><!-- doxytag: member="CPU_cmd.cpp::Jb_CPU" ref="aac1b66376824a67a45041f731cc20f17" args="(int *cmd_counter, Stack_t *CPU_Calc_Stack, double addr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jb_CPU </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"> <em>cmd_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea5a56d9edc9e875f2ae30e161361fc0"></a><!-- doxytag: member="CPU_cmd.cpp::Je_CPU" ref="aea5a56d9edc9e875f2ae30e161361fc0" args="(int *cmd_counter, Stack_t *CPU_Calc_Stack, double addr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Je_CPU </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"> <em>cmd_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4e8621899ae5a00b46950e5573b6719"></a><!-- doxytag: member="CPU_cmd.cpp::Jmp_CPU" ref="af4e8621899ae5a00b46950e5573b6719" args="(int *cmd_counter, double addr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jmp_CPU </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"> <em>cmd_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b8428618c52bab5d7cf762da2726c2c"></a><!-- doxytag: member="CPU_cmd.cpp::Jne_CPU" ref="a6b8428618c52bab5d7cf762da2726c2c" args="(int *cmd_counter, Stack_t *CPU_Calc_Stack, double addr)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Jne_CPU </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"> <em>cmd_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c1777bc8f206bcfbe594bf60ea29b07"></a><!-- doxytag: member="CPU_cmd.cpp::Mul_CPU" ref="a1c1777bc8f206bcfbe594bf60ea29b07" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mul_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac971a9f5d2f450c69236df058fda947a"></a><!-- doxytag: member="CPU_cmd.cpp::Nop_CPU" ref="ac971a9f5d2f450c69236df058fda947a" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nop_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Функция, ни делающая ничего. Сделана на всякий случай. ! </p>
+<p>Nop_CPU </p>
+
+</div>
+</div>
+<a class="anchor" id="a17072fdc210423b28b99b2ff15ecee41"></a><!-- doxytag: member="CPU_cmd.cpp::Pop_CPU" ref="a17072fdc210423b28b99b2ff15ecee41" args="(Stack_t *CPU_Calc_Stack, int fun_code=NO_CALLING_FUNC)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Pop_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>fun_code</em> = <code><a class="el" href="_c_p_u__cmd_8cpp.html#a82abd6ee9eadb54dd25fc4cae1d17d6e">NO_CALLING_FUNC</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Функция, вытаскивающая элемент из стека, и возвращающая его значение, если функция вызвана пользователем, то значение печатается на экран. В случае, если стек пуст, то в сообщении об ошибке печатается код вызвавшей функции (см. <a class="el" href="instr__set_8cpp.html">Instr_set.cpp</a>), если функция вызвана пользователем, то возвращается -1 (NO_CALLING_FUNC). ! </p>
+
+</div>
+</div>
+<a class="anchor" id="a6a736f2f5e2eda91b9c193d3a9e78474"></a><!-- doxytag: member="CPU_cmd.cpp::Pow_CPU" ref="a6a736f2f5e2eda91b9c193d3a9e78474" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pow_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e0a5c4dcc5938848b943c982b7fac9e"></a><!-- doxytag: member="CPU_cmd.cpp::Push_CPU" ref="a7e0a5c4dcc5938848b943c982b7fac9e" args="(Stack_t *CPU_Calc_Stack, double input_value, int fun_code=NO_CALLING_FUNC)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Push_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> <em>input_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"> <em>fun_code</em> = <code><a class="el" href="_c_p_u__cmd_8cpp.html#a82abd6ee9eadb54dd25fc4cae1d17d6e">NO_CALLING_FUNC</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f2d15d862e43169b9233167a3e2bf19"></a><!-- doxytag: member="CPU_cmd.cpp::Ret_CPU" ref="a0f2d15d862e43169b9233167a3e2bf19" args="(int *cmd_counter, Stack_t *CPU_Addrs_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ret_CPU </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"> <em>cmd_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Addrs_Stack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abf11cdc4701e7f753c5b337e76b83c54"></a><!-- doxytag: member="CPU_cmd.cpp::Sin_CPU" ref="abf11cdc4701e7f753c5b337e76b83c54" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sin_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64dd07cd3149e03c32b887c5696ec6f3"></a><!-- doxytag: member="CPU_cmd.cpp::Sqrt_CPU" ref="a64dd07cd3149e03c32b887c5696ec6f3" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sqrt_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a031ce7b5c5a3b8b0c088422a3f6bf758"></a><!-- doxytag: member="CPU_cmd.cpp::Sub_CPU" ref="a031ce7b5c5a3b8b0c088422a3f6bf758" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Sub_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25bfc48b4af9404c95b57e7f69e0fab7"></a><!-- doxytag: member="CPU_cmd.cpp::Swap_CPU" ref="a25bfc48b4af9404c95b57e7f69e0fab7" args="(Stack_t *CPU_Calc_Stack)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Swap_CPU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_stack__t.html">Stack_t</a> *&#160;</td>
+          <td class="paramname"> <em>CPU_Calc_Stack</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>РџРµСЂРµРјРµРЅРЅС‹Рµ</h2>
+<a class="anchor" id="a82abd6ee9eadb54dd25fc4cae1d17d6e"></a><!-- doxytag: member="CPU_cmd.cpp::NO_CALLING_FUNC" ref="a82abd6ee9eadb54dd25fc4cae1d17d6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="_c_p_u__cmd_8cpp.html#a82abd6ee9eadb54dd25fc4cae1d17d6e">NO_CALLING_FUNC</a> = -1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Command for Virtual Preprocessor v0.1. </p>
+<dl class="author"><dt><b>РђРІС‚РѕСЂ:</b></dt><dd>Крепак zorroxied Виталий 016 ФРТК </dd></dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>РЈРєР°Р·Р°С‚РµР»СЊ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>РљР»Р°СЃСЃС‹</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Р¤Р°Р№Р»С‹</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Р¤СѓРЅРєС†РёРё</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>РџРµСЂРµРјРµРЅРЅС‹Рµ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>РћРїСЂРµРґРµР»РµРЅРёСЏ С‚РёРїРѕРІ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>РџРµСЂРµС‡РёСЃР»РµРЅРёСЏ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Р­Р»РµРјРµРЅС‚С‹ РїРµСЂРµС‡РёСЃР»РµРЅРёР№</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>РњР°РєСЂРѕСЃС‹</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Р”РѕРєСѓРјРµРЅС‚Р°С†РёСЏ . РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ: Fri Mar 18 2011 19:14:56. РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>РљР»Р°СЃСЃ fn</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№ Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'РџРѕРёСЃРє');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>РўРёС‚СѓР»СЊРЅР°СЏ&#160;СЃС‚СЂР°РЅРёС†Р°</span></a></li>
+      <li class="current"><a href="annotated.html"><span>РљР»Р°СЃСЃС‹</span></a></li>
+      <li><a href="files.html"><span>Р¤Р°Р№Р»С‹</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="РџРѕРёСЃРє" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>РљР»Р°СЃСЃС‹</span></a></li>
+      <li><a href="classes.html"><span>РђР»С„Р°РІРёС‚РЅС‹Р№&#160;СѓРєР°Р·Р°С‚РµР»СЊ&#160;РєР»Р°СЃСЃРѕРІ</span></a></li>
+      <li><a href="functions.html"><span>Р§Р»РµРЅС‹&#160;РєР»Р°СЃСЃРѕРІ</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<h1>РљР»Р°СЃСЃ fn</h1>  </div>
+</div>
+<div class="contents">
+<!-- doxytag: class="fn" -->
+<p>Push_CPU.  
+<a href="#_details">РџРѕРґСЂРѕР±РЅРµРµ...</a></p>
+<table class="memberdecls">
+</table>
+<hr/><a name="_details"></a><h2>РџРѕРґСЂРѕР±РЅРѕРµ РѕРїРёСЃР°РЅРёРµ</h2>
+<p>Push_CPU. </p>
+<p>Jne_CPU.</p>
+<p>Je_CPU.</p>
+<p>Jb_CPU.</p>
+<p>Ja_CPU.</p>
+<p>Jmp_CPU.</p>
+<p>Ret_CPU.</p>
+<p>Call_CPU.</p>
+<p>Sin_CPU.</p>
+<p>Sqrt_CPU.</p>
+<p>Pow_CPU.</p>
+<p>Div_CPU.</p>
+<p>Mul_CPU.</p>
+<p>Sub_CPU.</p>
+<p>Add_CPU.</p>
+<p>Swap_CPU.</p>
+<p>Dup_CPU.</p>
+<p>Функция, которая кладет переданное ей значение в стек. Если произошло переполнение стека, то выводится сообщение об ошибке. При этом возвращается код вызвавшей функции (см. <a class="el" href="instr__set_8cpp.html">Instr_set.cpp</a>), если функция вызвана пользователем, то возвращается -1 (NO_CALLING_FUNC). !</p>
+<p>Функция, дублирующая последний элемент в стеке.</p>
+<p>Функция, меняющая местами два последних элемента стека.</p>
+<p>Функция, складывающая два послених элемента в стеке, и возвращающая результат в стек</p>
+<p>Функция, вычитающая из последнего элемента стека предпоследний и возвращающая результат в стек.</p>
+<p>Функция, умножающая последний элемент стека на предпоследний и возвращающая результат в стек.</p>
+<p>Функция, делящая последний элемент стека на предпоследний и возвращающая результат в стек.</p>
+<p>Функция, возводящая предпоследний элемент стека в стпень, которая лежит в последнем элементе и возвращающая результат в стек.</p>
+<p>Функция, извлекающая корень из последнего элемента в стеке и возвращающая результат в стек.</p>
+<p>Функция, возвращающая синус последнего элемента в стек.</p>
+<p>Функция, возвращающая косинус последнего элемента в стек.</p>
+<p>Функция, вызвающая функцию описанную пользователем в своей программе, записывает адрес возврата в стек адресов (CPU_Addrs_Stack)</p>
+<p>Функция, которая возвращает программу в место памяти, откуда была вызвана функция (см. Call_CPU)</p>
+<p>Функция, которая перемещает программу на указанный адрес.</p>
+<p>Функция, которая перемещает программу на указанный адрес, если последний элемент стека больше предыдущего.</p>
+<p>Функция, которая перемещает программу на указанный адрес, если последний элемент стека меньше предыдущего.</p>
+<p>Функция, которая перемещает программу на указанный адрес, если последний элемент стека равен предыдущему.</p>
+<p>Функция, которая перемещает программу на указанный адрес, если последний элемент стека не равен предыдущему. </p>
+<hr/>РћР±СЉСЏРІР»РµРЅРёСЏ Рё РѕРїРёСЃР°РЅРёСЏ С‡Р»РµРЅРѕРІ РєР»Р°СЃСЃР° РЅР°С…РѕРґСЏС‚СЃСЏ РІ С„Р°Р№Р»Рµ:<ul>
+<li><a class="el" href="_c_p_u__cmd_8cpp.html">CPU_cmd.cpp</a></li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>РЈРєР°Р·Р°С‚РµР»СЊ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>РљР»Р°СЃСЃС‹</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Р¤Р°Р№Р»С‹</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Р¤СѓРЅРєС†РёРё</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>РџРµСЂРµРјРµРЅРЅС‹Рµ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>РћРїСЂРµРґРµР»РµРЅРёСЏ С‚РёРїРѕРІ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>РџРµСЂРµС‡РёСЃР»РµРЅРёСЏ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Р­Р»РµРјРµРЅС‚С‹ РїРµСЂРµС‡РёСЃР»РµРЅРёР№</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>РњР°РєСЂРѕСЃС‹</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Р”РѕРєСѓРјРµРЅС‚Р°С†РёСЏ . РџРѕСЃР»РµРґРЅРёРµ РёР·РјРµРЅРµРЅРёСЏ: Fri Mar 18 2011 19:14:56. РЎРѕР·РґР°РЅРѕ СЃРёСЃС‚РµРјРѕР№&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

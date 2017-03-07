@@ -1,0 +1,89 @@
+\hypertarget{assembler_8cpp}{
+\section{Файл assembler.cpp}
+\label{assembler_8cpp}\index{assembler.cpp@{assembler.cpp}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$assert.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}instr\_\-set.cpp\char`\"{}}\par
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{assembler_8cpp_a6a3de2a9775af73cc411bbc42f0ec59a}{Greeting} ()
+\item 
+int \hyperlink{assembler_8cpp_a48d2f4c2a81ead38eaea4a21ee2ad805}{Go\_\-Assemle} (FILE $\ast$Source\_\-Code)
+\item 
+int \hyperlink{assembler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+int const \hyperlink{assembler_8cpp_aee94c586ab6283889b3eae41b31b39d9}{UNIT\_\-RECORD} = 1
+\begin{DoxyCompactList}\small\item\em Assembler for Virtual\_\-Preprocessor v0.1. \item\end{DoxyCompactList}\item 
+int const \hyperlink{assembler_8cpp_ae1b093a9e7afa4a80856be6761d3947d}{NUMBER\_\-OF\_\-LABELS} = 100
+\item 
+int const \hyperlink{assembler_8cpp_a386e5ea27a2c5832714fa7d704baaaf8}{MAX\_\-LEN\_\-OF\_\-LABEL} = 20
+\item 
+int const \hyperlink{assembler_8cpp_acefc0fd97668629eddfa25e1dc117a24}{NULL\_\-ADR} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{assembler_8cpp_a48d2f4c2a81ead38eaea4a21ee2ad805}{
+\index{assembler.cpp@{assembler.cpp}!Go\_\-Assemle@{Go\_\-Assemle}}
+\index{Go\_\-Assemle@{Go\_\-Assemle}!assembler.cpp@{assembler.cpp}}
+\subsubsection[{Go\_\-Assemle}]{\setlength{\rightskip}{0pt plus 5cm}int Go\_\-Assemle (
+\begin{DoxyParamCaption}
+\item[{FILE $\ast$}]{ Source\_\-Code}
+\end{DoxyParamCaption}
+)}}
+\label{assembler_8cpp_a48d2f4c2a81ead38eaea4a21ee2ad805}
+\hypertarget{assembler_8cpp_a6a3de2a9775af73cc411bbc42f0ec59a}{
+\index{assembler.cpp@{assembler.cpp}!Greeting@{Greeting}}
+\index{Greeting@{Greeting}!assembler.cpp@{assembler.cpp}}
+\subsubsection[{Greeting}]{\setlength{\rightskip}{0pt plus 5cm}void Greeting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{assembler_8cpp_a6a3de2a9775af73cc411bbc42f0ec59a}
+\hypertarget{assembler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{
+\index{assembler.cpp@{assembler.cpp}!main@{main}}
+\index{main@{main}!assembler.cpp@{assembler.cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{assembler_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+\subsection{Переменные}
+\hypertarget{assembler_8cpp_a386e5ea27a2c5832714fa7d704baaaf8}{
+\index{assembler.cpp@{assembler.cpp}!MAX\_\-LEN\_\-OF\_\-LABEL@{MAX\_\-LEN\_\-OF\_\-LABEL}}
+\index{MAX\_\-LEN\_\-OF\_\-LABEL@{MAX\_\-LEN\_\-OF\_\-LABEL}!assembler.cpp@{assembler.cpp}}
+\subsubsection[{MAX\_\-LEN\_\-OF\_\-LABEL}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf MAX\_\-LEN\_\-OF\_\-LABEL} = 20}}
+\label{assembler_8cpp_a386e5ea27a2c5832714fa7d704baaaf8}
+\hypertarget{assembler_8cpp_acefc0fd97668629eddfa25e1dc117a24}{
+\index{assembler.cpp@{assembler.cpp}!NULL\_\-ADR@{NULL\_\-ADR}}
+\index{NULL\_\-ADR@{NULL\_\-ADR}!assembler.cpp@{assembler.cpp}}
+\subsubsection[{NULL\_\-ADR}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf NULL\_\-ADR} = 0}}
+\label{assembler_8cpp_acefc0fd97668629eddfa25e1dc117a24}
+\hypertarget{assembler_8cpp_ae1b093a9e7afa4a80856be6761d3947d}{
+\index{assembler.cpp@{assembler.cpp}!NUMBER\_\-OF\_\-LABELS@{NUMBER\_\-OF\_\-LABELS}}
+\index{NUMBER\_\-OF\_\-LABELS@{NUMBER\_\-OF\_\-LABELS}!assembler.cpp@{assembler.cpp}}
+\subsubsection[{NUMBER\_\-OF\_\-LABELS}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf NUMBER\_\-OF\_\-LABELS} = 100}}
+\label{assembler_8cpp_ae1b093a9e7afa4a80856be6761d3947d}
+\hypertarget{assembler_8cpp_aee94c586ab6283889b3eae41b31b39d9}{
+\index{assembler.cpp@{assembler.cpp}!UNIT\_\-RECORD@{UNIT\_\-RECORD}}
+\index{UNIT\_\-RECORD@{UNIT\_\-RECORD}!assembler.cpp@{assembler.cpp}}
+\subsubsection[{UNIT\_\-RECORD}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf UNIT\_\-RECORD} = 1}}
+\label{assembler_8cpp_aee94c586ab6283889b3eae41b31b39d9}
+
+
+Assembler for Virtual\_\-Preprocessor v0.1. 
+
+\begin{DoxyAuthor}{Автор}
+������ zorroxied ������� 016 ���� 
+\end{DoxyAuthor}

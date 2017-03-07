@@ -1,0 +1,71 @@
+	call PushB
+	push 2 
+	nop
+	nop
+	pow
+	nop
+	dump
+	push 4
+	call PushA
+	call PushC
+	mul
+	mul
+	swap
+	sub
+	push 0
+	swap
+	ja AboveZero
+	jb BelowZero
+	je EqZero
+
+AboveZero:
+	dup
+	sqrt
+	call PushB
+	push -1
+	mul
+	sub
+	call PushA
+	push 2
+	mul
+	swap
+	div
+	pop
+	sqrt
+	call PushB
+	push -1
+	mul
+	add
+	call PushA
+	push 2
+	mul
+	swap
+	div
+	pop
+	end
+
+BelowZero:
+	push -666
+	pop
+	end
+
+EqZero:
+	call PushB
+	push -1
+	mul
+	call PushA
+	push 2
+	mul
+	swap
+	div
+	pop
+	end
+
+PushA:	push 1
+	ret
+
+PushB:  push 4
+	ret
+
+PushC:  push 4
+	ret

@@ -1,0 +1,156 @@
+\hypertarget{stack__functions_8cpp}{
+\section{Файл stack\_\-functions.cpp}
+\label{stack__functions_8cpp}\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}}
+}
+{\ttfamily \#include $<$assert.h$>$}\par
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_stack__t}{Stack\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{stack__functions_8cpp_af81bfd1f3a3237cf6efd2713cf264b74}{Stack\_\-Construct} (\hyperlink{struct_stack__t}{Stack\_\-t} $\ast$Ordering\_\-Stack, int Stack\_\-Size, int size\_\-of\_\-element)
+\item 
+void \hyperlink{stack__functions_8cpp_a736e98aa4afe89841f8ce347ad217b2a}{Push} (\hyperlink{struct_stack__t}{Stack\_\-t} $\ast$Stack, double input\_\-value)
+\item 
+double \hyperlink{stack__functions_8cpp_a27d68e2f6120cf776a59c3ddc413610c}{Pop} (\hyperlink{struct_stack__t}{Stack\_\-t} $\ast$Stack)
+\item 
+void \hyperlink{stack__functions_8cpp_a576b250f70a75ac5ccaf95b3339de595}{Stack\_\-Clear} (\hyperlink{struct_stack__t}{Stack\_\-t} $\ast$Stack)
+\item 
+double \hyperlink{stack__functions_8cpp_ae8f1906398e6f15c1ed4e751061b494b}{Stack\_\-Top} (\hyperlink{struct_stack__t}{Stack\_\-t} $\ast$Stack)
+\item 
+int \hyperlink{stack__functions_8cpp_aae0730ddc8281dba01359cddce0f1019}{Check\_\-Damage} (\hyperlink{struct_stack__t}{Stack\_\-t} $\ast$Stack)
+\item 
+void \hyperlink{stack__functions_8cpp_a486a21128dd4dfacedb7d7703291939c}{Stack\_\-Destruct} (\hyperlink{struct_stack__t}{Stack\_\-t} $\ast$Stack)
+\item 
+int \hyperlink{stack__functions_8cpp_a9077b7e622f5ac7c65de184d4202d258}{Stack\_\-Dump} (\hyperlink{struct_stack__t}{Stack\_\-t} $\ast$Stack, int With\_\-List\_\-of\_\-Elements)
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+int const \hyperlink{stack__functions_8cpp_a186e65ce1f2d297849eaed5637a663fa}{SIZE\_\-OF\_\-STACK} = 1000
+\begin{DoxyCompactList}\small\item\em Stack\_\-Functions. \item\end{DoxyCompactList}\item 
+int const \hyperlink{stack__functions_8cpp_a2ec38300b59a7d5ceae2f537a3c519b6}{WRITE\_\-LIST\_\-YES} = 1
+\item 
+int const \hyperlink{stack__functions_8cpp_a0d72d818a08b708312e3c66988830715}{WRITE\_\-LIST\_\-NO} = 0
+\item 
+int const \hyperlink{stack__functions_8cpp_aa7ed3c58bfa63800f1d20b0f8b6753c2}{BEGIN\_\-OF\_\-STACK} = 0
+\item 
+int const \hyperlink{stack__functions_8cpp_aba3a43219046089b957387fb8dbdea54}{TERMINATE} = -\/666
+\end{DoxyCompactItemize}
+
+
+\subsection{Функции}
+\hypertarget{stack__functions_8cpp_aae0730ddc8281dba01359cddce0f1019}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!Check\_\-Damage@{Check\_\-Damage}}
+\index{Check\_\-Damage@{Check\_\-Damage}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{Check\_\-Damage}]{\setlength{\rightskip}{0pt plus 5cm}int Check\_\-Damage (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\_\-t} $\ast$}]{ Stack}
+\end{DoxyParamCaption}
+)}}
+\label{stack__functions_8cpp_aae0730ddc8281dba01359cddce0f1019}
+\hypertarget{stack__functions_8cpp_a27d68e2f6120cf776a59c3ddc413610c}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!Pop@{Pop}}
+\index{Pop@{Pop}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{Pop}]{\setlength{\rightskip}{0pt plus 5cm}double Pop (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\_\-t} $\ast$}]{ Stack}
+\end{DoxyParamCaption}
+)}}
+\label{stack__functions_8cpp_a27d68e2f6120cf776a59c3ddc413610c}
+\hypertarget{stack__functions_8cpp_a736e98aa4afe89841f8ce347ad217b2a}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!Push@{Push}}
+\index{Push@{Push}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{Push}]{\setlength{\rightskip}{0pt plus 5cm}void Push (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\_\-t} $\ast$}]{ Stack, }
+\item[{double}]{ input\_\-value}
+\end{DoxyParamCaption}
+)}}
+\label{stack__functions_8cpp_a736e98aa4afe89841f8ce347ad217b2a}
+\hypertarget{stack__functions_8cpp_a576b250f70a75ac5ccaf95b3339de595}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!Stack\_\-Clear@{Stack\_\-Clear}}
+\index{Stack\_\-Clear@{Stack\_\-Clear}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{Stack\_\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}void Stack\_\-Clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\_\-t} $\ast$}]{ Stack}
+\end{DoxyParamCaption}
+)}}
+\label{stack__functions_8cpp_a576b250f70a75ac5ccaf95b3339de595}
+\hypertarget{stack__functions_8cpp_af81bfd1f3a3237cf6efd2713cf264b74}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!Stack\_\-Construct@{Stack\_\-Construct}}
+\index{Stack\_\-Construct@{Stack\_\-Construct}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{Stack\_\-Construct}]{\setlength{\rightskip}{0pt plus 5cm}void Stack\_\-Construct (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\_\-t} $\ast$}]{ Ordering\_\-Stack, }
+\item[{int}]{ Stack\_\-Size, }
+\item[{int}]{ size\_\-of\_\-element}
+\end{DoxyParamCaption}
+)}}
+\label{stack__functions_8cpp_af81bfd1f3a3237cf6efd2713cf264b74}
+\hypertarget{stack__functions_8cpp_a486a21128dd4dfacedb7d7703291939c}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!Stack\_\-Destruct@{Stack\_\-Destruct}}
+\index{Stack\_\-Destruct@{Stack\_\-Destruct}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{Stack\_\-Destruct}]{\setlength{\rightskip}{0pt plus 5cm}void Stack\_\-Destruct (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\_\-t} $\ast$}]{ Stack}
+\end{DoxyParamCaption}
+)}}
+\label{stack__functions_8cpp_a486a21128dd4dfacedb7d7703291939c}
+\hypertarget{stack__functions_8cpp_a9077b7e622f5ac7c65de184d4202d258}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!Stack\_\-Dump@{Stack\_\-Dump}}
+\index{Stack\_\-Dump@{Stack\_\-Dump}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{Stack\_\-Dump}]{\setlength{\rightskip}{0pt plus 5cm}int Stack\_\-Dump (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\_\-t} $\ast$}]{ Stack, }
+\item[{int}]{ With\_\-List\_\-of\_\-Elements}
+\end{DoxyParamCaption}
+)}}
+\label{stack__functions_8cpp_a9077b7e622f5ac7c65de184d4202d258}
+\hypertarget{stack__functions_8cpp_ae8f1906398e6f15c1ed4e751061b494b}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!Stack\_\-Top@{Stack\_\-Top}}
+\index{Stack\_\-Top@{Stack\_\-Top}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{Stack\_\-Top}]{\setlength{\rightskip}{0pt plus 5cm}double Stack\_\-Top (
+\begin{DoxyParamCaption}
+\item[{{\bf Stack\_\-t} $\ast$}]{ Stack}
+\end{DoxyParamCaption}
+)}}
+\label{stack__functions_8cpp_ae8f1906398e6f15c1ed4e751061b494b}
+
+
+\subsection{Переменные}
+\hypertarget{stack__functions_8cpp_aa7ed3c58bfa63800f1d20b0f8b6753c2}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!BEGIN\_\-OF\_\-STACK@{BEGIN\_\-OF\_\-STACK}}
+\index{BEGIN\_\-OF\_\-STACK@{BEGIN\_\-OF\_\-STACK}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{BEGIN\_\-OF\_\-STACK}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf BEGIN\_\-OF\_\-STACK} = 0}}
+\label{stack__functions_8cpp_aa7ed3c58bfa63800f1d20b0f8b6753c2}
+\hypertarget{stack__functions_8cpp_a186e65ce1f2d297849eaed5637a663fa}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!SIZE\_\-OF\_\-STACK@{SIZE\_\-OF\_\-STACK}}
+\index{SIZE\_\-OF\_\-STACK@{SIZE\_\-OF\_\-STACK}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{SIZE\_\-OF\_\-STACK}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf SIZE\_\-OF\_\-STACK} = 1000}}
+\label{stack__functions_8cpp_a186e65ce1f2d297849eaed5637a663fa}
+
+
+Stack\_\-Functions. 
+
+Release of Stack \begin{DoxyAuthor}{Автор}
+������ zorroxied ������� 016 ���� 
+\end{DoxyAuthor}
+\hypertarget{stack__functions_8cpp_aba3a43219046089b957387fb8dbdea54}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!TERMINATE@{TERMINATE}}
+\index{TERMINATE@{TERMINATE}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{TERMINATE}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf TERMINATE} = -\/666}}
+\label{stack__functions_8cpp_aba3a43219046089b957387fb8dbdea54}
+\hypertarget{stack__functions_8cpp_a0d72d818a08b708312e3c66988830715}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!WRITE\_\-LIST\_\-NO@{WRITE\_\-LIST\_\-NO}}
+\index{WRITE\_\-LIST\_\-NO@{WRITE\_\-LIST\_\-NO}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{WRITE\_\-LIST\_\-NO}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf WRITE\_\-LIST\_\-NO} = 0}}
+\label{stack__functions_8cpp_a0d72d818a08b708312e3c66988830715}
+\hypertarget{stack__functions_8cpp_a2ec38300b59a7d5ceae2f537a3c519b6}{
+\index{stack\_\-functions.cpp@{stack\_\-functions.cpp}!WRITE\_\-LIST\_\-YES@{WRITE\_\-LIST\_\-YES}}
+\index{WRITE\_\-LIST\_\-YES@{WRITE\_\-LIST\_\-YES}!stack_functions.cpp@{stack\_\-functions.cpp}}
+\subsubsection[{WRITE\_\-LIST\_\-YES}]{\setlength{\rightskip}{0pt plus 5cm}int const {\bf WRITE\_\-LIST\_\-YES} = 1}}
+\label{stack__functions_8cpp_a2ec38300b59a7d5ceae2f537a3c519b6}

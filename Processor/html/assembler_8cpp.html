@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Файл assembler.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<h1>Файл assembler.cpp</h1>  </div>
+</div>
+<div class="contents">
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="instr__set_8cpp.html">instr_set.cpp</a>&quot;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="assembler_8cpp.html#a6a3de2a9775af73cc411bbc42f0ec59a">Greeting</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="assembler_8cpp.html#a48d2f4c2a81ead38eaea4a21ee2ad805">Go_Assemle</a> (FILE *Source_Code)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="assembler_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="assembler_8cpp.html#aee94c586ab6283889b3eae41b31b39d9">UNIT_RECORD</a> = 1</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembler for Virtual_Preprocessor v0.1.  <a href="#aee94c586ab6283889b3eae41b31b39d9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="assembler_8cpp.html#ae1b093a9e7afa4a80856be6761d3947d">NUMBER_OF_LABELS</a> = 100</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="assembler_8cpp.html#a386e5ea27a2c5832714fa7d704baaaf8">MAX_LEN_OF_LABEL</a> = 20</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="assembler_8cpp.html#acefc0fd97668629eddfa25e1dc117a24">NULL_ADR</a> = 0</td></tr>
+</table>
+<hr/><h2>Функции</h2>
+<a class="anchor" id="a48d2f4c2a81ead38eaea4a21ee2ad805"></a><!-- doxytag: member="assembler.cpp::Go_Assemle" ref="a48d2f4c2a81ead38eaea4a21ee2ad805" args="(FILE *Source_Code)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Go_Assemle </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"> <em>Source_Code</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a3de2a9775af73cc411bbc42f0ec59a"></a><!-- doxytag: member="assembler.cpp::Greeting" ref="a6a3de2a9775af73cc411bbc42f0ec59a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Greeting </td>
+          <td>(</td>
+          <td class="paramname">&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a><!-- doxytag: member="assembler.cpp::main" ref="ae66f6b31b5ad750f1fe042a706a4e3d4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname">&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Переменные</h2>
+<a class="anchor" id="a386e5ea27a2c5832714fa7d704baaaf8"></a><!-- doxytag: member="assembler.cpp::MAX_LEN_OF_LABEL" ref="a386e5ea27a2c5832714fa7d704baaaf8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="assembler_8cpp.html#a386e5ea27a2c5832714fa7d704baaaf8">MAX_LEN_OF_LABEL</a> = 20</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acefc0fd97668629eddfa25e1dc117a24"></a><!-- doxytag: member="assembler.cpp::NULL_ADR" ref="acefc0fd97668629eddfa25e1dc117a24" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="assembler_8cpp.html#acefc0fd97668629eddfa25e1dc117a24">NULL_ADR</a> = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae1b093a9e7afa4a80856be6761d3947d"></a><!-- doxytag: member="assembler.cpp::NUMBER_OF_LABELS" ref="ae1b093a9e7afa4a80856be6761d3947d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="assembler_8cpp.html#ae1b093a9e7afa4a80856be6761d3947d">NUMBER_OF_LABELS</a> = 100</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee94c586ab6283889b3eae41b31b39d9"></a><!-- doxytag: member="assembler.cpp::UNIT_RECORD" ref="aee94c586ab6283889b3eae41b31b39d9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="assembler_8cpp.html#aee94c586ab6283889b3eae41b31b39d9">UNIT_RECORD</a> = 1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Assembler for Virtual_Preprocessor v0.1. </p>
+<dl class="author"><dt><b>Автор:</b></dt><dd>������ zorroxied ������� 016 ���� </dd></dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация . Последние изменения: Fri Mar 18 2011 19:14:56. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

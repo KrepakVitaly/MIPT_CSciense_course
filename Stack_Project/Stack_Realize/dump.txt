@@ -1,0 +1,10 @@
+Hello! I'm dump of your stack.
+If you called me, then you in a trouble.
+I hope, I can help you, my master...
+
+Stack parameters:
+
+The number of elements     =  1000;
+Pointer value in this time =  1;
+The last element           =  10;
+The address of beginning   =  4012216;

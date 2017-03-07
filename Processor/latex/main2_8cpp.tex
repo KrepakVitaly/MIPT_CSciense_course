@@ -1,0 +1,140 @@
+\hypertarget{main2_8cpp}{
+\section{Файл main2.cpp}
+\label{main2_8cpp}\index{main2.cpp@{main2.cpp}}
+}
+{\ttfamily \#include \char`\"{}cmd\_\-list.c\char`\"{}}\par
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_cmd__t}{Cmd\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main2_8cpp_ac72c7a31a60fb94c98bc420f8d00b873}{DEFINE\_\-CMD\_\-}(\hyperlink{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3}{cmd}, def)~cmd\_\-\#\#\hyperlink{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3}{cmd},
+\item 
+\#define \hyperlink{main2_8cpp_a118426bbeebe47daac236d479a4d3d09}{DEFINE\_\-CMD\_\-}(\hyperlink{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3}{cmd})
+\end{DoxyCompactItemize}
+\subsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{main2_8cpp_a1062901a7428fdd9c7f180f5e01ea056}{bool}
+\end{DoxyCompactItemize}
+\subsection*{Перечисления}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3}{cmd} \{ \hyperlink{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3af120c209a13b563eabc573bf1f7dd61b}{cmd\_\-MaxCmdError} =  -\/1, 
+\hyperlink{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3a55f0c61c4aebb901f6f43c010f3ce66c}{cmd\_\-MaxCmdNum} = ( push, 1 )( pop , 2 )( clr , 3 )( ok , 4 )( dump, 5 )( dup , 6 )( swap, 7 )( add , 48 )( sub , 49 )( div , 50 )( pow , 51 )( sqrt, 52 )( sin , 53 )( cos , 54 )( call, 115 )( ret , 116 )( jmp , 117 )( ja , 118 )( jb , 119 )( je , 120 )( jne , 121 )( nop , 153 )( end , 255 )
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main2_8cpp_aca07fca5366565fb255c9b3e689609a5}{InitCommandTable} (\hyperlink{struct_cmd__t}{Cmd\_\-t} \hyperlink{main2_8cpp_ac2a8c4973a3e3fed67a3de8bd3efeefb}{commands}\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{main2_8cpp_a55dabe285a3a58a01e566a5b61ad31a4}{NMAX} = 1000
+\item 
+const int \hyperlink{main2_8cpp_af9a724fe57b45f7e44b22e13b350b825}{CMD\_\-MAX} = 17
+\item 
+const \hyperlink{struct_cmd__t}{Cmd\_\-t} \hyperlink{main2_8cpp_ac2a8c4973a3e3fed67a3de8bd3efeefb}{commands} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Макросы}
+\hypertarget{main2_8cpp_ac72c7a31a60fb94c98bc420f8d00b873}{
+\index{main2.cpp@{main2.cpp}!DEFINE\_\-CMD\_\-@{DEFINE\_\-CMD\_\-}}
+\index{DEFINE\_\-CMD\_\-@{DEFINE\_\-CMD\_\-}!main2.cpp@{main2.cpp}}
+\subsubsection[{DEFINE\_\-CMD\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEFINE\_\-CMD\_\-(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf cmd}, }
+\item[{}]{def}
+\end{DoxyParamCaption}
+)~cmd\_\-\#\#{\bf cmd},}}
+\label{main2_8cpp_ac72c7a31a60fb94c98bc420f8d00b873}
+\hypertarget{main2_8cpp_a118426bbeebe47daac236d479a4d3d09}{
+\index{main2.cpp@{main2.cpp}!DEFINE\_\-CMD\_\-@{DEFINE\_\-CMD\_\-}}
+\index{DEFINE\_\-CMD\_\-@{DEFINE\_\-CMD\_\-}!main2.cpp@{main2.cpp}}
+\subsubsection[{DEFINE\_\-CMD\_\-}]{\setlength{\rightskip}{0pt plus 5cm}\#define DEFINE\_\-CMD\_\-(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf cmd}}
+\end{DoxyParamCaption}
+)}}
+\label{main2_8cpp_a118426bbeebe47daac236d479a4d3d09}
+{\bfseries Макроопределение:}
+\begin{DoxyCode}
+{                                       \
+    commands[cmd_##cmd].code = cmd_##cmd;   \
+    commands[cmd_##cmd].name = #cmd;        \
+    }
+\end{DoxyCode}
+
+
+\subsection{Типы}
+\hypertarget{main2_8cpp_a1062901a7428fdd9c7f180f5e01ea056}{
+\index{main2.cpp@{main2.cpp}!bool@{bool}}
+\index{bool@{bool}!main2.cpp@{main2.cpp}}
+\subsubsection[{bool}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf bool}}}
+\label{main2_8cpp_a1062901a7428fdd9c7f180f5e01ea056}
+
+
+\subsection{Перечисления}
+\hypertarget{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3}{
+\index{main2.cpp@{main2.cpp}!cmd@{cmd}}
+\index{cmd@{cmd}!main2.cpp@{main2.cpp}}
+\subsubsection[{cmd}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf cmd}}}
+\label{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3}
+\begin{Desc}
+\item[Элементы перечислений: ]\par
+\begin{description}
+\index{cmd\_\-MaxCmdError@{cmd\_\-MaxCmdError}!main2.cpp@{main2.cpp}}\index{main2.cpp@{main2.cpp}!cmd\_\-MaxCmdError@{cmd\_\-MaxCmdError}}\item[{\em 
+\hypertarget{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3af120c209a13b563eabc573bf1f7dd61b}{
+cmd\_\-MaxCmdError}
+\label{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3af120c209a13b563eabc573bf1f7dd61b}
+}]\index{cmd\_\-MaxCmdNum@{cmd\_\-MaxCmdNum}!main2.cpp@{main2.cpp}}\index{main2.cpp@{main2.cpp}!cmd\_\-MaxCmdNum@{cmd\_\-MaxCmdNum}}\item[{\em 
+\hypertarget{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3a55f0c61c4aebb901f6f43c010f3ce66c}{
+cmd\_\-MaxCmdNum}
+\label{main2_8cpp_adfc5ba7e22f5e4a6221c12a70503bef3a55f0c61c4aebb901f6f43c010f3ce66c}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Функции}
+\hypertarget{main2_8cpp_aca07fca5366565fb255c9b3e689609a5}{
+\index{main2.cpp@{main2.cpp}!InitCommandTable@{InitCommandTable}}
+\index{InitCommandTable@{InitCommandTable}!main2.cpp@{main2.cpp}}
+\subsubsection[{InitCommandTable}]{\setlength{\rightskip}{0pt plus 5cm}void InitCommandTable (
+\begin{DoxyParamCaption}
+\item[{{\bf Cmd\_\-t}}]{ commands\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}
+\label{main2_8cpp_aca07fca5366565fb255c9b3e689609a5}
+
+
+\subsection{Переменные}
+\hypertarget{main2_8cpp_af9a724fe57b45f7e44b22e13b350b825}{
+\index{main2.cpp@{main2.cpp}!CMD\_\-MAX@{CMD\_\-MAX}}
+\index{CMD\_\-MAX@{CMD\_\-MAX}!main2.cpp@{main2.cpp}}
+\subsubsection[{CMD\_\-MAX}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf CMD\_\-MAX} = 17}}
+\label{main2_8cpp_af9a724fe57b45f7e44b22e13b350b825}
+\hypertarget{main2_8cpp_ac2a8c4973a3e3fed67a3de8bd3efeefb}{
+\index{main2.cpp@{main2.cpp}!commands@{commands}}
+\index{commands@{commands}!main2.cpp@{main2.cpp}}
+\subsubsection[{commands}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Cmd\_\-t} {\bf commands}\mbox{[}$\,$\mbox{]}}}
+\label{main2_8cpp_ac2a8c4973a3e3fed67a3de8bd3efeefb}
+{\bfseries Инициализатор}
+\begin{DoxyCode}
+ {
+    {cmd_nop,  "nop" },
+    {cmd_push, "push"},
+    {cmd_pop,  "pop" }
+}
+\end{DoxyCode}
+\hypertarget{main2_8cpp_a55dabe285a3a58a01e566a5b61ad31a4}{
+\index{main2.cpp@{main2.cpp}!NMAX@{NMAX}}
+\index{NMAX@{NMAX}!main2.cpp@{main2.cpp}}
+\subsubsection[{NMAX}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf NMAX} = 1000}}
+\label{main2_8cpp_a55dabe285a3a58a01e566a5b61ad31a4}

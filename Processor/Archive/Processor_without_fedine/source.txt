@@ -1,0 +1,5 @@
+push 1.0000
+push 2.5
+push 12
+dump
+end

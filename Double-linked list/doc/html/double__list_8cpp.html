@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Double-linked list: Файл H:/CScience/Double-linked list/double_list.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- Создано системой Doxygen 1.7.2 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li id="searchli">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<h1>Файл H:/CScience/Double-linked list/double_list.cpp</h1>  </div>
+</div>
+<div class="contents">
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;malloc.h&gt;</code><br/>
+<code>#include &lt;windows.h&gt;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlist__elem__t.html">list_elem_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Элемент списка структура является элементом списка  <a href="structlist__elem__t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlist__t.html">list_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Спискок. Содержит в себе указатели на начальный и конечный элементы. Внимание! После объявления необходимо инициализировать  <a href="structlist__t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structiter__t.html">iter_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Итератор. Приспособление для ориентирования по списку. Содержит в себе указатель на список, по которому "ходит"; а также указатель на текущий просматриваемый элемент Внимание! После объявления необходимо инициализировать!!!!  <a href="structiter__t.html#_details">Подробнее...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#aa181ce6c9b73889989018c92304a8930">Delete_Element</a> (<a class="el" href="structiter__t.html">iter_t</a> *Iterator)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete_Element.  <a href="#aa181ce6c9b73889989018c92304a8930"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#ad025d6dc0f490cfecf5f4bfac3d53062">Add_Element</a> (<a class="el" href="structiter__t.html">iter_t</a> *Iterator)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add_Element.  <a href="#ad025d6dc0f490cfecf5f4bfac3d53062"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#a75448edf2720e9edab614ef77f6193ed">Init_Iterator</a> (<a class="el" href="structiter__t.html">iter_t</a> *Iterator)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Init_Iterator.  <a href="#a75448edf2720e9edab614ef77f6193ed"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#a3a1eaa193133ddba7de417d9710c6559">Init_List</a> (<a class="el" href="structlist__t.html">list_t</a> *List)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Init_List.  <a href="#a3a1eaa193133ddba7de417d9710c6559"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#aab553d3812f0888dc3256d3ea72ff017">Rewind_to_End_List</a> (<a class="el" href="structiter__t.html">iter_t</a> *Iterator)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#ad5945a41e34fbd9a4430cba0590086be">Iter</a> (<a class="el" href="structiter__t.html">iter_t</a> *Iterator)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#a229bdf98c52341ac4e43938a352c464c">Rewind_List</a> (<a class="el" href="structiter__t.html">iter_t</a> *Iterator)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewind_List.  <a href="#a229bdf98c52341ac4e43938a352c464c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#a49cb60e909cf9bb442005efe73bd494f">Filling_Test</a> (<a class="el" href="structiter__t.html">iter_t</a> *Iterator)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="double__list_8cpp.html#affb9f5c211a982124aff1235224d930a">NONCONST</a> = 0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Двусвязный список  <a href="#affb9f5c211a982124aff1235224d930a"></a><br/></td></tr>
+</table>
+<hr/><h2>Функции</h2>
+<a class="anchor" id="ad025d6dc0f490cfecf5f4bfac3d53062"></a><!-- doxytag: member="double_list.cpp::Add_Element" ref="ad025d6dc0f490cfecf5f4bfac3d53062" args="(iter_t *Iterator)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Add_Element </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__t.html">iter_t</a> *&#160;</td>
+          <td class="paramname"> <em>Iterator</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add_Element. </p>
+<p>Функция, добавляющая новый элемент в список.</p>
+<p>Внимание! Функция работает только с концом списка! </p>
+
+</div>
+</div>
+<a class="anchor" id="aa181ce6c9b73889989018c92304a8930"></a><!-- doxytag: member="double_list.cpp::Delete_Element" ref="aa181ce6c9b73889989018c92304a8930" args="(iter_t *Iterator)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Delete_Element </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__t.html">iter_t</a> *&#160;</td>
+          <td class="paramname"> <em>Iterator</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Delete_Element. </p>
+<p>Функция, удаляющая текущий элемент из списка. Внимание! Если осуществлена попытка удалить элемент из пустого списка (элемент, указатель на который NULL), то assert. </p>
+
+</div>
+</div>
+<a class="anchor" id="a49cb60e909cf9bb442005efe73bd494f"></a><!-- doxytag: member="double_list.cpp::Filling_Test" ref="a49cb60e909cf9bb442005efe73bd494f" args="(iter_t *Iterator)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Filling_Test </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__t.html">iter_t</a> *&#160;</td>
+          <td class="paramname"> <em>Iterator</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a75448edf2720e9edab614ef77f6193ed"></a><!-- doxytag: member="double_list.cpp::Init_Iterator" ref="a75448edf2720e9edab614ef77f6193ed" args="(iter_t *Iterator)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Init_Iterator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__t.html">iter_t</a> *&#160;</td>
+          <td class="paramname"> <em>Iterator</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Init_Iterator. </p>
+<p>Инициализация типа <a class="el" href="structiter__t.html" title="Итератор. Приспособление для ориентирования по списку. Содержит в себе указатель на список...">iter_t</a> NULL'ами </p>
+
+</div>
+</div>
+<a class="anchor" id="a3a1eaa193133ddba7de417d9710c6559"></a><!-- doxytag: member="double_list.cpp::Init_List" ref="a3a1eaa193133ddba7de417d9710c6559" args="(list_t *List)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Init_List </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlist__t.html">list_t</a> *&#160;</td>
+          <td class="paramname"> <em>List</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Init_List. </p>
+<p>Инициализация типа <a class="el" href="structlist__t.html" title="Спискок. Содержит в себе указатели на начальный и конечный элементы. Внимание! После объявления необх...">list_t</a> NULL'ами </p>
+
+</div>
+</div>
+<a class="anchor" id="ad5945a41e34fbd9a4430cba0590086be"></a><!-- doxytag: member="double_list.cpp::Iter" ref="ad5945a41e34fbd9a4430cba0590086be" args="(iter_t *Iterator)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Iter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__t.html">iter_t</a> *&#160;</td>
+          <td class="paramname"> <em>Iterator</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a><!-- doxytag: member="double_list.cpp::main" ref="ae66f6b31b5ad750f1fe042a706a4e3d4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname">&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a229bdf98c52341ac4e43938a352c464c"></a><!-- doxytag: member="double_list.cpp::Rewind_List" ref="a229bdf98c52341ac4e43938a352c464c" args="(iter_t *Iterator)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rewind_List </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__t.html">iter_t</a> *&#160;</td>
+          <td class="paramname"> <em>Iterator</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Rewind_List. </p>
+<p>Переход к началу списка </p>
+
+</div>
+</div>
+<a class="anchor" id="aab553d3812f0888dc3256d3ea72ff017"></a><!-- doxytag: member="double_list.cpp::Rewind_to_End_List" ref="aab553d3812f0888dc3256d3ea72ff017" args="(iter_t *Iterator)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rewind_to_End_List </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structiter__t.html">iter_t</a> *&#160;</td>
+          <td class="paramname"> <em>Iterator</em>&#160;)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Переменные</h2>
+<a class="anchor" id="affb9f5c211a982124aff1235224d930a"></a><!-- doxytag: member="double_list.cpp::NONCONST" ref="affb9f5c211a982124aff1235224d930a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const <a class="el" href="double__list_8cpp.html#affb9f5c211a982124aff1235224d930a">NONCONST</a> = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Двусвязный список </p>
+<p>doubly-linked list </p>
+<dl class="author"><dt><b>Автор:</b></dt><dd>Крепак zorroxied Виталий 016 ФРТК </dd></dl>
+
+</div>
+</div>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr class="footer"/><address class="footer"><small>Документация по Double-linked list. Последние изменения: Wed Dec 15 2010 12:36:53. Создано системой&#160;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
+</body>
+</html>

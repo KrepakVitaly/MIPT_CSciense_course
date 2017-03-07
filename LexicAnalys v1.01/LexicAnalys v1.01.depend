@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1292972979 source:c:\users\user\documents\c projects\lexicanalys v1.01\spaces_analysis.cpp
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+
+1292977276 source:c:\users\user\documents\c projects\lexicanalys v1.01\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"spaces_analysis.h"
+	"rule_functions.h"
+	"consts.h"
+	"get_types.h"
+	"fsm.h"
+
+1292971263 c:\users\user\documents\c projects\lexicanalys v1.01\spaces_analysis.h
+
+1292971334 c:\users\user\documents\c projects\lexicanalys v1.01\rule_functions.h
+
+1292974804 c:\users\user\documents\c projects\lexicanalys v1.01\consts.h
+
+1292974590 c:\users\user\documents\c projects\lexicanalys v1.01\get_types.h
+
+1292977218 source:c:\users\user\documents\c projects\lexicanalys v1.01\get_types.cpp
+	<ctype.h>
+	<string.h>
+	<stdio.h>
+	"consts.h"
+
+1292977245 source:c:\users\user\documents\c projects\lexicanalys v1.01\rule_functions.cpp
+	<stdio.h>
+	<string.h>
+	"consts.h"
+	"get_types.h"
+	"rule_functions.h"
+	"fsm.h"
+
+1293125529 source:c:\users\user\documents\c projects\lexicanalys v1.01\fsm.cpp
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"spaces_analysis.h"
+	"rule_functions.h"
+	"consts.h"
+	"get_types.h"
+	"fsm.h"
+
+1292976249 c:\users\user\documents\c projects\lexicanalys v1.01\fsm.h
+

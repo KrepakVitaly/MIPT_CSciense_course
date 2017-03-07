@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdftex 2010.8.22)  15 DEC 2010 12:29
+entering extended mode
+**H:/CScience/Double-linked*list/doc/latex/doxygen.sty
+("H:/CScience/Double-linked list/doc/latex/doxygen.sty"
+! Undefined control sequence.
+l.1 \NeedsTeXFormat
+                   {LaTeX2e}
+? 
+! Emergency stop.
+l.1 \NeedsTeXFormat
+                   {LaTeX2e}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
